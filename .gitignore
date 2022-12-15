@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Model/bin/Debug/net6.0
+/Model/obj
+/SheetPlay.External.NAudio/bin/Debug/net6.0
+/SheetPlay.External.NAudio/obj
+/SheetPlay.External.SWE/bin/Debug/net6.0
+/SheetPlay.External.SWE/obj
+/SheetPlay.Lib.Application/bin/Debug/net6.0
+/SheetPlay.Lib.Application/obj
+/SheetPlayForm/bin/Debug/net6.0-windows
+/SheetPlayForm/obj
+/SheetPlaySolution/bin/Debug/net6.0-windows
+/SheetPlaySolution/obj
