@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Model\SheetPlay.Lib.Model.csproj" />
+    <ProjectReference Include="..\SheetPlay.External.NAudio\SheetPlay.External.NAudio.csproj" />
+    <ProjectReference Include="..\SheetPlay.External.SWE\SheetPlay.External.SWE.csproj" />
+  </ItemGroup>
+
+</Project>

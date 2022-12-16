@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{2B56570E-92FE-47CE-8FEB-AAA290A3DB67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{D49408BC-6690-42C1-B761-D5748AEB7B3C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SheetPlay.Lib.Model", "..\Model\SheetPlay.Lib.Model.csproj", "{C27BE8FC-6CF5-4C35-8887-D8B98DCD17DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SheetPlay.Lib.Application", "..\SheetPlay.Lib.Application\SheetPlay.Lib.Application.csproj", "{F4903E92-46CC-498A-A0E5-3609EBF6A6D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SheetPlay.External.SWE", "..\SheetPlay.External.SWE\SheetPlay.External.SWE.csproj", "{11676E58-FB73-4693-9015-ED9730A6EEAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SheetPlay.External.NAudio", "..\SheetPlay.External.NAudio\SheetPlay.External.NAudio.csproj", "{E4B9D5D9-9C6E-408F-B258-1880C7F6B170}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SheetPlayForm", "..\SheetPlayForm\SheetPlayForm.csproj", "{723CE32E-BE80-4E2A-BF01-2E4A691FC4E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C27BE8FC-6CF5-4C35-8887-D8B98DCD17DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27BE8FC-6CF5-4C35-8887-D8B98DCD17DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C27BE8FC-6CF5-4C35-8887-D8B98DCD17DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C27BE8FC-6CF5-4C35-8887-D8B98DCD17DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4903E92-46CC-498A-A0E5-3609EBF6A6D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4903E92-46CC-498A-A0E5-3609EBF6A6D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4903E92-46CC-498A-A0E5-3609EBF6A6D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4903E92-46CC-498A-A0E5-3609EBF6A6D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11676E58-FB73-4693-9015-ED9730A6EEAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11676E58-FB73-4693-9015-ED9730A6EEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11676E58-FB73-4693-9015-ED9730A6EEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11676E58-FB73-4693-9015-ED9730A6EEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4B9D5D9-9C6E-408F-B258-1880C7F6B170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B9D5D9-9C6E-408F-B258-1880C7F6B170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B9D5D9-9C6E-408F-B258-1880C7F6B170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B9D5D9-9C6E-408F-B258-1880C7F6B170}.Release|Any CPU.Build.0 = Release|Any CPU
+		{723CE32E-BE80-4E2A-BF01-2E4A691FC4E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{723CE32E-BE80-4E2A-BF01-2E4A691FC4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{723CE32E-BE80-4E2A-BF01-2E4A691FC4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{723CE32E-BE80-4E2A-BF01-2E4A691FC4E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C27BE8FC-6CF5-4C35-8887-D8B98DCD17DD} = {D49408BC-6690-42C1-B761-D5748AEB7B3C}
+		{F4903E92-46CC-498A-A0E5-3609EBF6A6D7} = {D49408BC-6690-42C1-B761-D5748AEB7B3C}
+		{11676E58-FB73-4693-9015-ED9730A6EEAF} = {2B56570E-92FE-47CE-8FEB-AAA290A3DB67}
+		{E4B9D5D9-9C6E-408F-B258-1880C7F6B170} = {2B56570E-92FE-47CE-8FEB-AAA290A3DB67}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68FCF29D-91C8-4F81-B0ED-7A9962E28561}
+	EndGlobalSection
+EndGlobal

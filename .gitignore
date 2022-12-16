@@ -14,3 +14,6 @@
 /SheetPlayForm/obj
 /SheetPlaySolution/bin/Debug/net6.0-windows
 /SheetPlaySolution/obj
+/SheetPlaySolution/.vs
+/.gitignore
+/.gitignore
