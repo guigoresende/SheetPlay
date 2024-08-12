@@ -18,6 +18,7 @@ namespace SheetPlay.Lib.Application.Sheet
                 var split = default(string[]);
                 decimal previouslyTime = 0;
                 decimal currentTime = 0;
+
                 using (var sr = new StreamReader(fileAddress))
                 {
                     while (true)
@@ -41,13 +42,15 @@ namespace SheetPlay.Lib.Application.Sheet
                         tracePerTimeList.Add(new Model.Entity.TracePerTime()
                         {
                             Time = currentTime,
-                            Trace1 = (float)Convert.ToDecimal(split[1].Trim(), CulturePtBr),
-                            Trace2 = (float)Convert.ToDecimal(split[2].Trim(), CulturePtBr),
+                            Trace1 = ValidateTraceValue(split[1].Trim()),
+                            Trace2 = ValidateTraceValue(split[2].Trim()),
+                            Trace3 = ValidateTraceValue(split[3].Trim()),
                         });
                     }
                 }
 
                 returnObj.Value = tracePerTimeList;
+                returnObj.HttpStatusCode = System.Net.HttpStatusCode.OK;
 
             }
             catch (Exception ex)
@@ -59,5 +62,18 @@ namespace SheetPlay.Lib.Application.Sheet
             return returnObj;
         }
 
+        private float ValidateTraceValue(string trace)
+        {
+
+            if (string.IsNullOrEmpty(trace))
+                return default(float);
+
+            var _float = default(float);
+            if (float.TryParse(trace.Trim(), NumberStyles.Float, CulturePtBr, out _float))
+                return _float;
+            
+            return default(float);
+
+        }
     }
 }

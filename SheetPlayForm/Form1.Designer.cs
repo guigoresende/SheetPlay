@@ -28,109 +28,120 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.btnPlayTraceOne = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.labelStatic = new System.Windows.Forms.Label();
-            this.labelLine = new System.Windows.Forms.Label();
-            this.btnPlayTraceTwo = new System.Windows.Forms.Button();
-            this.txtTimeMultiplier = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btnDemonstrate = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            btnPlayTraceOne = new Button();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            labelStatic = new Label();
+            labelLine = new Label();
+            btnPlayTraceTwo = new Button();
+            txtTimeMultiplier = new TextBox();
+            label1 = new Label();
+            toolTip1 = new ToolTip(components);
+            btnDemonstrate = new Button();
+            btnPlayTraceThree = new Button();
+            SuspendLayout();
             // 
             // btnPlayTraceOne
             // 
-            this.btnPlayTraceOne.Location = new System.Drawing.Point(12, 53);
-            this.btnPlayTraceOne.Name = "btnPlayTraceOne";
-            this.btnPlayTraceOne.Size = new System.Drawing.Size(210, 43);
-            this.btnPlayTraceOne.TabIndex = 0;
-            this.btnPlayTraceOne.Text = "Play trace1";
-            this.btnPlayTraceOne.UseVisualStyleBackColor = true;
-            this.btnPlayTraceOne.Click += new System.EventHandler(this.Trace1_Click);
+            btnPlayTraceOne.Location = new Point(12, 53);
+            btnPlayTraceOne.Name = "btnPlayTraceOne";
+            btnPlayTraceOne.Size = new Size(210, 43);
+            btnPlayTraceOne.TabIndex = 2;
+            btnPlayTraceOne.Text = "Play trace1";
+            btnPlayTraceOne.UseVisualStyleBackColor = true;
+            btnPlayTraceOne.Click += Trace1_Click;
             // 
             // backgroundWorker1
             // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
-            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            backgroundWorker1.DoWork += backgroundWorker1_DoWork;
+            backgroundWorker1.ProgressChanged += backgroundWorker1_ProgressChanged;
+            backgroundWorker1.RunWorkerCompleted += backgroundWorker1_RunWorkerCompleted;
             // 
             // labelStatic
             // 
-            this.labelStatic.AutoSize = true;
-            this.labelStatic.Location = new System.Drawing.Point(12, 143);
-            this.labelStatic.Name = "labelStatic";
-            this.labelStatic.Size = new System.Drawing.Size(72, 15);
-            this.labelStatic.TabIndex = 2;
-            this.labelStatic.Text = "Current line:";
+            labelStatic.AutoSize = true;
+            labelStatic.Location = new Point(12, 187);
+            labelStatic.Name = "labelStatic";
+            labelStatic.Size = new Size(72, 15);
+            labelStatic.TabIndex = 5;
+            labelStatic.Text = "Current line:";
             // 
             // labelLine
             // 
-            this.labelLine.AutoSize = true;
-            this.labelLine.Location = new System.Drawing.Point(86, 143);
-            this.labelLine.Name = "labelLine";
-            this.labelLine.Size = new System.Drawing.Size(13, 15);
-            this.labelLine.TabIndex = 3;
-            this.labelLine.Text = "0";
+            labelLine.AutoSize = true;
+            labelLine.Location = new Point(89, 187);
+            labelLine.Name = "labelLine";
+            labelLine.Size = new Size(13, 15);
+            labelLine.TabIndex = 6;
+            labelLine.Text = "0";
             // 
             // btnPlayTraceTwo
             // 
-            this.btnPlayTraceTwo.Location = new System.Drawing.Point(12, 102);
-            this.btnPlayTraceTwo.Name = "btnPlayTraceTwo";
-            this.btnPlayTraceTwo.Size = new System.Drawing.Size(210, 38);
-            this.btnPlayTraceTwo.TabIndex = 4;
-            this.btnPlayTraceTwo.Text = "Play trace2";
-            this.btnPlayTraceTwo.UseVisualStyleBackColor = true;
-            this.btnPlayTraceTwo.Click += new System.EventHandler(this.btnPlayTrace2_Click);
+            btnPlayTraceTwo.Location = new Point(12, 102);
+            btnPlayTraceTwo.Name = "btnPlayTraceTwo";
+            btnPlayTraceTwo.Size = new Size(210, 38);
+            btnPlayTraceTwo.TabIndex = 3;
+            btnPlayTraceTwo.Text = "Play trace2";
+            btnPlayTraceTwo.UseVisualStyleBackColor = true;
+            btnPlayTraceTwo.Click += btnPlayTrace2_Click;
             // 
             // txtTimeMultiplier
             // 
-            this.txtTimeMultiplier.Location = new System.Drawing.Point(12, 24);
-            this.txtTimeMultiplier.Name = "txtTimeMultiplier";
-            this.txtTimeMultiplier.Size = new System.Drawing.Size(210, 23);
-            this.txtTimeMultiplier.TabIndex = 5;
-            this.txtTimeMultiplier.Text = "1000";
-            this.txtTimeMultiplier.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            txtTimeMultiplier.Location = new Point(12, 24);
+            txtTimeMultiplier.Name = "txtTimeMultiplier";
+            txtTimeMultiplier.Size = new Size(210, 23);
+            txtTimeMultiplier.TabIndex = 1;
+            txtTimeMultiplier.Text = "1000";
+            txtTimeMultiplier.TextAlign = HorizontalAlignment.Right;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 15);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Time multiplier:";
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 6);
+            label1.Name = "label1";
+            label1.Size = new Size(90, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Time multiplier:";
             // 
             // btnDemonstrate
             // 
-            this.btnDemonstrate.Location = new System.Drawing.Point(12, 166);
-            this.btnDemonstrate.Name = "btnDemonstrate";
-            this.btnDemonstrate.Size = new System.Drawing.Size(210, 38);
-            this.btnDemonstrate.TabIndex = 7;
-            this.btnDemonstrate.Text = "Demonstrate";
-            this.btnDemonstrate.UseVisualStyleBackColor = true;
-            this.btnDemonstrate.Click += new System.EventHandler(this.btnDemonstrate_Click);
+            btnDemonstrate.Location = new Point(12, 205);
+            btnDemonstrate.Name = "btnDemonstrate";
+            btnDemonstrate.Size = new Size(210, 38);
+            btnDemonstrate.TabIndex = 7;
+            btnDemonstrate.Text = "Demonstrate";
+            btnDemonstrate.UseVisualStyleBackColor = true;
+            btnDemonstrate.Click += btnDemonstrate_Click;
+            // 
+            // btnPlayTraceThree
+            // 
+            btnPlayTraceThree.Location = new Point(12, 146);
+            btnPlayTraceThree.Name = "btnPlayTraceThree";
+            btnPlayTraceThree.Size = new Size(210, 38);
+            btnPlayTraceThree.TabIndex = 4;
+            btnPlayTraceThree.Text = "Play trace3";
+            btnPlayTraceThree.UseVisualStyleBackColor = true;
+            btnPlayTraceThree.Click += btnPlayTrace3_Click;
             // 
             // SheetPlayForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(234, 213);
-            this.Controls.Add(this.btnDemonstrate);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtTimeMultiplier);
-            this.Controls.Add(this.btnPlayTraceTwo);
-            this.Controls.Add(this.labelLine);
-            this.Controls.Add(this.labelStatic);
-            this.Controls.Add(this.btnPlayTraceOne);
-            this.Name = "SheetPlayForm";
-            this.Text = "SheetPlay";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoSize = true;
+            ClientSize = new Size(234, 255);
+            Controls.Add(btnPlayTraceThree);
+            Controls.Add(btnDemonstrate);
+            Controls.Add(label1);
+            Controls.Add(txtTimeMultiplier);
+            Controls.Add(btnPlayTraceTwo);
+            Controls.Add(labelLine);
+            Controls.Add(labelStatic);
+            Controls.Add(btnPlayTraceOne);
+            Name = "SheetPlayForm";
+            Text = "SheetPlay";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -145,5 +156,6 @@
         private Label label1;
         private ToolTip toolTip1;
         private Button btnDemonstrate;
+        private Button btnPlayTraceThree;
     }
 }
